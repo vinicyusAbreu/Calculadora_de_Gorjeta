@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculadora de Gorjetas</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <div class="box">
+                <h3>Calcular Gorjeta</h3>
+                <hr>
+                <div class="boxInterno">
+                    <p>Dinheiro gasto:</p>
+                    <div class="boxInput">
+                        <i class="fas fa-money-check-alt"></i>
+                        <input type="number" class="gastoInput" id="gasto">
+                    </div>
+                </div>
+
+                <div class="boxInterno">
+                    <p>Número de pessoas:</p>
+                    <div class="boxInput">
+                        <i class="fas fa-user-friends"></i>
+                        <input type="number" class="gastoInput" id="pessoas">
+                    </div>
+                </div>
+
+                <div class="boxInterno">
+                    <p>Qualidade do serviço</p>
+
+                    <div class="boxSelect">
+                        <i class="fas fa-funnel-dollar"></i>
+                        <select id="selecao">
+                            <option disabled selected value="0">Escolher</option>
+                            <option value="0.3">30% - Excelente</option>
+                            <option value="0.2">20% - Muito Bom</option>
+                            <option value="0.15">15% - Bom</option>
+                            <option value="0.1">10% - Regular</option>
+                            <option value="0.05">5% - Ruim</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <hr>
+                <div class="containerBtn">
+                    <button class="btn">Calcular</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="gorjeta">
+
+        </div>
+
+    </div>
+
+    <script src="./js/app.js" async defer></script>
+</body>
+
+</html>
